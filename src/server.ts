@@ -39,13 +39,17 @@ import { log } from 'console'
 	app.get('/filteredimage', async (req, res) => {
 		const image_url = req.query.image_url || ''
 		if (image_url) {
-			const result = await filterImageFromURL(image_url)
-
-			res.sendFile(result)
-
-			return res.on('finish', () => {
-				deleteLocalFiles([result])
-			})
+			try {
+				const result = await filterImageFromURL(image_url)
+				res.sendFile(result)
+				return res.on('finish', () => {
+					deleteLocalFiles([result])
+				})
+			} catch (error) {
+				return res
+					.status(400)
+					.send({ error: 'A Valide Image url is required' })
+			}
 		}
 
 		return res.status(400).send({ error: 'Image url is required' })
