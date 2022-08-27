@@ -46,7 +46,7 @@ import { log } from 'console'
 				return res.on('finish', () => {
 					deleteLocalFiles([result])
 				})
-			} catch (error: unknown) {
+			} catch (error) {
 				return res.status(404).send({
 					error:
 						error instanceof Error
