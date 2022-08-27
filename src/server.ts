@@ -42,13 +42,17 @@ import { log } from 'console'
 			try {
 				const result = await filterImageFromURL(image_url)
 				res.sendFile(result)
+
 				return res.on('finish', () => {
 					deleteLocalFiles([result])
 				})
-			} catch (error) {
-				return res
-					.status(400)
-					.send({ error: 'A Valide Image url is required' })
+			} catch (error: unknown) {
+				return res.status(404).send({
+					error:
+						error instanceof Error
+							? error.message
+							: 'Image not found. A Valide Image url is required',
+				})
 			}
 		}
 

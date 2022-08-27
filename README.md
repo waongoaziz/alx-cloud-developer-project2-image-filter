@@ -1,7 +1,9 @@
 # Udagram Image Filtering Microservice
 
-DEPLOYED_APP_URL: https://
-GITHUB_URL: https://
+# Submission results
+
+1. [DEPLOYED_APP_URL] ()
+2. [GITHUB_URL] (https://github.com/waongoaziz/alx-cloud-developer-project2-image-filter)
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
