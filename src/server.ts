@@ -48,10 +48,12 @@ import { log } from 'console'
 				})
 			} catch (error) {
 				return res.status(404).send({
-					error:
-						error instanceof Error
-							? error.message
-							: 'Image not found. A Valide Image url is required',
+					// erreur:
+					// 	error instanceof Error
+					// 		? error.message
+					// 		: 'Image not found. A Valide Image url is required',
+					erreur: "L'image fournie est introuvable",
+					codeErreur: 404,
 				})
 			}
 		}
