@@ -2,12 +2,12 @@
 
 # Submission results
 
-1. [DEPLOYED_APP_URL] ()
+1. [DEPLOYED_APP_URL] (http://waongo-image-filter-dev.us-east-1.elasticbeanstalk.com/)
 2. [GITHUB_URL] (https://github.com/waongoaziz/alx-cloud-developer-project2-image-filter)
 
-3. [EXEMPLE_OF_TESTED_IMAGE_URL] (https://pixabay.com/get/gbbf492f4720c145f271506e54bb4bc8e003be7c26850f5e4b6218936ebf177b9c7a57e4a55e33888b7b97c7346a42d0145e1289358be8c006c6d6884a5625c2f_1920.jpg)
+3. [EXEMPLE_OF_TESTED_IMAGE_URL] (https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg)
 
-4. [FULL_URL] (http://waongo-image-filter-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://pixabay.com/get/gbbf492f4720c145f271506e54bb4bc8e003be7c26850f5e4b6218936ebf177b9c7a57e4a55e33888b7b97c7346a42d0145e1289358be8c006c6d6884a5625c2f_1920.jpg)
+4. [FULL_URL] (http://waongo-image-filter-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg)
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
